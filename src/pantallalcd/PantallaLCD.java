@@ -5,7 +5,6 @@
  */
 package pantallalcd;
 
-import control.Metodos;
 import control.PedirInformacion;
 
 /**
@@ -19,10 +18,8 @@ public class PantallaLCD {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-//        PedirInformacion objInformacion = new PedirInformacion();
-//        objInformacion.obtenerInfo();
-        Metodos objMetodos = new Metodos();
-        objMetodos.rueba();
+        PedirInformacion objInformacion = new PedirInformacion();
+        objInformacion.obtenerInfo();
     }
     
 }
