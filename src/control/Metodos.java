@@ -57,4 +57,26 @@ public class Metodos {
             System.out.print(" ");
         System.out.print("|   ");
     }
+    public void rueba (){
+        int num = 124357134;
+        String numero = String.valueOf(num);
+        int aux =0;
+        int mayor=0;
+        char vect [] = new char [numero.length()];
+        for(int i=0; i<numero.length() -1;i++){
+            vect[i] = numero.charAt(i);
+        }
+        for (int i=0; i<numero.length()-1;i++){
+            for (int j=0; j<numero.length()-1;j++){
+                if(Character.hashCode(vect[j])<Character.hashCode(vect[j+1])){
+                    char tmp = vect[j+1];
+                    vect[j+1] = vect[j];
+                    vect[j] = tmp;
+                }
+            }
+        }
+        for (int i=0; i<numero.length()-1;i++){
+            System.out.println(vect[i]);
+        }
+    }
 }
